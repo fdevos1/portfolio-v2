@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { LegacyRef, useRef } from "react";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -18,8 +18,6 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { ISkills } from "../types/skills";
 
 const SkillsSlider = () => {
-  const slider = useRef();
-
   const settings = {
     dots: false,
     arrows: false,
@@ -30,7 +28,6 @@ const SkillsSlider = () => {
     autoplaySpeed: 2000,
     cssEase: "linear",
     centerMode: true,
-    ref: slider,
   };
   const skills: ISkills[] = [
     {
