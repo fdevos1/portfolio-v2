@@ -43,7 +43,7 @@ export default function Home() {
         {text("projects")}
       </span>
 
-      <div className="grid grid-cols-2 auto-rows-max md:grid-cols-4 gap-2 p-4 overflow-auto">
+      <div className="grid grid-cols-2 auto-rows-max md:grid-cols-4 gap-2 p-4 overflow-auto mr-2">
         <Projects />
       </div>
     </div>

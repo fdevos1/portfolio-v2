@@ -22,10 +22,11 @@ const SkillsSlider = () => {
     dots: false,
     arrows: false,
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 0,
+    speed: 9000,
     cssEase: "linear",
     centerMode: true,
   };
@@ -75,15 +76,14 @@ const SkillsSlider = () => {
   return (
     <div className=" flex flex-col justify-between items-start h-full max-h-[200px] w-full mt-8 bg-neutral-700 p-4 ">
       <p className="text-sm font-extralight	 text-neutral-300">Tecnologias</p>
-      <Slider className="w-full" {...settings}>
+      <Slider className="w-full " {...settings}>
         {skills.map(({ name, icon }, index) => {
           return (
-            <div
-              className="flex flex-col justify-center items-center"
-              key={index}
-            >
-              {icon}
-              <p className="text-sm text-neutral-200">{name}</p>
+            <div className="flex flex-col " key={index}>
+              <div className="h-[30px] flex justify-center items-center">
+                {icon}
+              </div>
+              <p className="text-sm text-neutral-200 text-center">{name}</p>
             </div>
           );
         })}
