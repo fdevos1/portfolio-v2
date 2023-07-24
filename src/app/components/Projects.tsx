@@ -16,7 +16,7 @@ const Projects = () => {
   const [repos, setRepos] = useState<IRepos[] | []>([]);
 
   const app = new Octokit({
-    auth: "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",
+    auth: process.env.GITHUB,
   });
 
   const fetchRepos = async () => {
