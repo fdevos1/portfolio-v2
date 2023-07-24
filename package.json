@@ -1,5 +1,5 @@
 {
-  "name": "my-resume",
+  "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -15,11 +15,20 @@
     "autoprefixer": "10.4.14",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.10",
+    "lucide-react": "^0.263.0",
     "next": "13.4.10",
+    "next-intl": "^2.19.0",
+    "next-themes": "^0.2.1",
+    "octokit": "^3.0.0",
     "postcss": "8.4.26",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
+    "react-responsive-carousel": "^3.2.23",
     "tailwindcss": "3.3.3",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@types/negotiator": "^0.6.1"
   }
 }
