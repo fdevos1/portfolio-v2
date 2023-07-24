@@ -2,14 +2,14 @@
 
 Olá, me chamo Felipe e esse é meu portfólio de projetos.
 
-Você pode ver ele [aqui](https://my-portfolio-next-js-iota.vercel.app/)
+Você pode ve-lo [aqui](https://my-portfolio-next-js-iota.vercel.app/)
 
 Se você quiser rodar o projeto local, clone esse repositório, instale as dependência com:
 
 ```bash
 yarn
 
-# or
+# ou
 
 npm install
 
@@ -21,7 +21,7 @@ Com as dependências instaladas inicie o projeto com:
 
 yarn dev
 
-# or
+# ou
 
 npm run dev
 
