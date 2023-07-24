@@ -1,6 +1,10 @@
 "use client";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+
+import { useRef } from "react";
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import {
@@ -13,7 +17,21 @@ import {
 import { TbBrandNextjs } from "react-icons/tb";
 import { ISkills } from "../types/skills";
 
-const SkillsCarousel = () => {
+const SkillsSlider = () => {
+  const slider = useRef();
+
+  const settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    centerMode: true,
+    ref: slider,
+  };
   const skills: ISkills[] = [
     {
       name: "React",
@@ -58,37 +76,25 @@ const SkillsCarousel = () => {
   ];
 
   return (
-    <div className=" flex flex-col justify-between items-start h-[200px] w-full mt-8 bg-neutral-700 p-4 ">
+    <div className=" flex flex-col justify-between items-start h-full max-h-[200px] w-full mt-8 bg-neutral-700 p-4 ">
       <p className="text-sm font-extralight	 text-neutral-300">Tecnologias</p>
-      <Carousel
-        autoPlay
-        centerMode
-        centerSlidePercentage={20}
-        infiniteLoop
-        interval={1500}
-        showArrows={false}
-        showIndicators={false}
-        showStatus={false}
-        showThumbs={false}
-        dynamicHeight
-        className="flex w-full justify-center items-center"
-      >
-        {skills.map(({ name, icon }) => {
+      <Slider className="w-full" {...settings}>
+        {skills.map(({ name, icon }, index) => {
           return (
             <div
               className="flex flex-col justify-center items-center"
-              key={`item-${name}`}
+              key={index}
             >
               {icon}
               <p className="text-sm text-neutral-200">{name}</p>
             </div>
           );
         })}
-      </Carousel>
+      </Slider>
 
       <div>{""}</div>
     </div>
   );
 };
 
-export default SkillsCarousel;
+export default SkillsSlider;

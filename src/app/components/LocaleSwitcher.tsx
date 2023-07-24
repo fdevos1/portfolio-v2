@@ -29,8 +29,8 @@ const LocaleSwitcher = () => {
         return pathname === href ? (
           <Image height={25} src={icon} key={`locale-${name}`} alt={name} />
         ) : (
-          <Link href={href}>
-            <Image height={25} src={icon} key={`locale-${name}`} alt={name} />
+          <Link href={href} key={`locale-${name}`}>
+            <Image height={25} src={icon} alt={name} />
           </Link>
         );
       })}
