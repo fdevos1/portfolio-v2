@@ -2,6 +2,8 @@
   "texts": {
     "salutation": "Hi, i'm Felipe",
     "stack": "Full-Stack Developer",
-    "projects": "My projects"
+    "projects": "My projects",
+    "currentProject": "You are here!",
+    "noPreview": "No preview available"
   }
 }

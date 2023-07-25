@@ -24,7 +24,6 @@ const SkillsSlider = () => {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
     autoplaySpeed: 0,
     speed: 9000,
     cssEase: "linear",
