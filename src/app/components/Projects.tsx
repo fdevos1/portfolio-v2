@@ -6,6 +6,10 @@ import { useTranslations } from "next-intl";
 
 import { Octokit } from "octokit";
 
+import Title from "./Title";
+import Text from "./Text";
+import Link from "./Link";
+
 interface IRepos {
   name: string;
   html_url: string;
@@ -46,32 +50,25 @@ const Projects = () => {
   return repos.map(({ name, html_url, homepage }) => {
     return (
       <div
-        className="flex flex-col justify-center  md:h-[150px] col-span-1 border border-solid border-neutral-700 text-sm text-neutral-400 font-light rounded-md"
+        className="flex flex-col p-4 justify-center col-span-1 border border-solid border-neutral-700 text-xs rounded-md md:h-[150px] md:text-sm "
         key={`repo-${name}`}
       >
         <div className="flex gap-2">
-          <p>Repositório:</p>
-          <p className=" text-neutral-300 font-medium">{name}</p>
+          <Title>Repositório:</Title>
+          <Text>{name}</Text>
         </div>
         <div className="flex gap-2">
-          <p>Github:</p>
-          <p className=" text-neutral-300 font-medium truncate">{html_url}</p>
+          <Title>Github:</Title>
+          <Link href={html_url}>{html_url}</Link>
         </div>
         <div className="flex gap-2">
-          <p>Preview:</p>
+          <Title>Preview:</Title>
           {name.toLowerCase() === "my-portfolio-nextjs" ? (
-            <p className=" text-neutral-300 font-medium truncate">
-              {text("currentProject")}
-            </p>
+            <Text>{text("currentProject")}</Text>
           ) : homepage ? (
-            <a
-              className=" text-neutral-300 font-medium truncate"
-              href={homepage}
-            >
-              homepage
-            </a>
+            <Link href={homepage}>homepage</Link>
           ) : (
-            text("noPreview")
+            <Text>{text("noPreview")}</Text>
           )}
         </div>
       </div>
