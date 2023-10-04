@@ -1,9 +1,31 @@
 {
-  "texts": {
-    "salutation": "Hi, i'm Felipe",
-    "stack": "Full-Stack Developer",
-    "projects": "My projects",
-    "currentProject": "You are here!",
-    "noPreview": "No preview available"
+  "Hero": {
+    "salutation": "Hi, my name is",
+    "stack": "Web Developer",
+    "passionate": "Passionate about technology and innovation",
+    "competence": "with experience in creating efficient and high-quality web solutions.",
+    "button": "Look my GitHub!"
+  },
+  "About": {
+    "title": "About me",
+    "text_1": "Hello, my name is Felipe and I've been a developer for three years. My journey in web development began in 2020 when I had my first professional opportunity in the field as a front-end developer, where I fell in love with the world of code.",
+    "text_2": "Currently, I am a full-stack developer at Pandorga Tech in Porto Alegre, where I had the opportunity to develop a platform tailored for politicians from scratch using React, and also had my first experience working with Node.",
+    "text_3": "These are some of the technologies I have already used:"
+  },
+  "Jobs": {
+    "title": "Where I worked"
+  },
+  "Projects": {
+    "title": "My repositories",
+    "button": "See all"
+  },
+  "Contact": {
+    "title": "Get in touch",
+    "text": "Feel free to send me a message, my inbox is always open. I will do my best to respond as soon as possible.",
+    "button": "Send a hello"
+  },
+  "Footer": {
+    "made_by": "Built by:",
+    "design_by": "Design by:"
   }
 }
