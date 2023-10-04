@@ -1,9 +1,31 @@
 {
-  "texts": {
-    "salutation": "Olá, eu sou o Felipe",
-    "stack": "Desenvolvedor Full-Stack",
-    "projects": "Meus projetos",
-    "currentProject": "Você está aqui!",
-    "noPreview": "Nenhum preview disponível"
+  "Hero": {
+    "salutation": "Olá, meu nome é",
+    "stack": "Desenvolvedor web",
+    "passionate": "Apaixonado por tecnologia e inovação",
+    "competence": "com experiência em criar soluções web eficientes e de alta qualidade.",
+    "button": "Olhe meu github!"
+  },
+  "About": {
+    "title": "Sobre mim",
+    "text_1": "Olá, meu nome é Felipe e sou desenvolvedor a três anos. Minha jornada no desenvolvimento web começou em 2020. Quando tive minha primeira oportunidade profissional na área, como desenvolvedor front-end, onde me apaixonei pelo mundo dos códigos.",
+    "text_2": "Atualmente sou desenvolvedor full-stack na Pandorga Tech, em Porto Alegre, onde tive a oportunidade de desenvolver uma plataforma direcionada a políticos do zero com React e também pela primeira vez trabalhar com Node.",
+    "text_3": "Essas são algumas das tecnologias que eu já usei:"
+  },
+  "Jobs": {
+    "title": "Onde trabalhei"
+  },
+  "Projects": {
+    "title": "Meus repositórios",
+    "button": "Ver todos"
+  },
+  "Contact": {
+    "title": "Entre em contato",
+    "text": "Sinta-se a vontade para me enviar uma mensagem, meu inbox está sempre aberto. Farei meu melhor pra responder o mais breve possível.",
+    "button": "Mandar um olá"
+  },
+  "Footer": {
+    "made_by": "Construído por: ",
+    "design_by": "Design de: "
   }
 }
