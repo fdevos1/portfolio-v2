@@ -2,7 +2,7 @@
 import Image from "next/image";
 
 import config from "@/config";
-import profile from "../../images/profile.jpeg";
+import profile from "../../app/images/profile.jpeg";
 
 import { useTranslations } from "next-intl";
 

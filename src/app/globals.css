@@ -119,7 +119,7 @@ html {
   font-style: normal;
   font-weight: normal;
   src: local("SF Mono Regular"),
-    url("./components/fonts/SFMono/SFMonoRegular.woff") format("woff");
+    url("../components/fonts/SFMono/SFMonoRegular.woff") format("woff");
 }
 
 @font-face {
@@ -127,5 +127,5 @@ html {
   font-style: normal;
   font-weight: normal;
   src: local("SF Mono Regular Italic"),
-    url("./components/fonts/SFMono/SFMonoRegularItalic.woff") format("woff");
+    url("../components/fonts/SFMono/SFMonoRegularItalic.woff") format("woff");
 }

@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 import config from "@/config";
-import useScrollDirection from "../hooks/useScrollDirection";
+import useScrollDirection from "@/app/hooks/useScrollDirection";
 import Icon from "./icons/icon";
 
 const Header = () => {
