@@ -50,7 +50,7 @@ const Projects = () => {
             hover:translate-y-[-7px]
             "
             >
-              <header>
+              <header className="w-full">
                 <div className="flex justify-between items-center mb-[35px]">
                   <div className="text-cyan-500">
                     <Icon width="40" height="40" name="Folder" />
@@ -83,7 +83,7 @@ const Projects = () => {
                 </div>
               </header>
 
-              <footer>
+              <footer className="w-full">
                 <ul className="flex items-end flex-wrap grow mt-[20px]">
                   {item.topics.map((item: string, i: number) => (
                     <li
