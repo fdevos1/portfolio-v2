@@ -24,9 +24,11 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { lng: string };
 }) {
-  let messages;
+  let messages: any;
   try {
     messages = (await import(`../../messages/${lng}.json`)).default;
+
+    return { fallback: false };
   } catch (error) {
     notFound();
   }
