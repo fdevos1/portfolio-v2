@@ -10,7 +10,7 @@ export type IconProps = ComponentProps<"svg"> & {
   name: string;
 };
 
-const Icon = ({ name, ...props }: IconProps) => {
+const Icon = ({ name }: IconProps) => {
   switch (name) {
     case "Github":
       return <IconGitHub />;
@@ -21,7 +21,7 @@ const Icon = ({ name, ...props }: IconProps) => {
     case "Logo":
       return <IconLogo />;
     case "Folder":
-      return <IconFolder {...props} />;
+      return <IconFolder />;
   }
 };
 
