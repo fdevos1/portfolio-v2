@@ -9,8 +9,6 @@ import Jobs from "../components/sections/jobs";
 import Projects from "../components/sections/projects";
 
 export default function Home() {
-  const text = useTranslations("texts");
-
   return (
     <div>
       <Layout>

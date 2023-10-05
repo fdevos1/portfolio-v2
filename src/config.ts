@@ -41,19 +41,19 @@ const config = {
       body: [
         {
           name: "About",
-          url: "/#about",
+          url: "/en-US#sobre",
         },
         {
           name: "Experience",
-          url: "/#experience",
+          url: "/en-US#experiencia",
         },
         {
           name: "Projects",
-          url: "/#projects",
+          url: "/en-US#projetos",
         },
         {
           name: "Contact",
-          url: "/#contact",
+          url: "/en-US#contato",
         },
       ],
     },
