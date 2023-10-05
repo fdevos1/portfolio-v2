@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 
+import { usePathname } from "next/navigation";
+
 import config from "@/config";
 import useScrollDirection from "../hooks/useScrollDirection";
 import Icon from "./icons/icon";
@@ -9,6 +11,8 @@ import Icon from "./icons/icon";
 const Header = () => {
   const scrollDirection = useScrollDirection("down");
   const [scrolledToTop, setScrolledToTop] = useState(true);
+
+  const pathname = usePathname();
 
   const handleScroll = () => {
     setScrolledToTop(window.pageYOffset < 50);
@@ -43,9 +47,9 @@ const Header = () => {
         <Icon name="Logo" />
         <div className="flex items-center lg:hidden">
           <ol className="flex justify-between items-center p-0 m-0 list-none">
-            {config.navLinks &&
-              config.navLinks.map(
-                ({ url, name }: { url: string; name: string }, i: number) => (
+            {config.navLinks.map(({ language, body }, i: number) => {
+              if (language === pathname) {
+                return body.map(({ url, name }) => (
                   <li key={i} className="my-1 relative">
                     <a
                       href={url}
@@ -54,8 +58,9 @@ const Header = () => {
                       {name}
                     </a>
                   </li>
-                )
-              )}
+                ));
+              }
+            })}
           </ol>
           <a
             href="/cv"
