@@ -101,9 +101,9 @@ const config = {
           stack: "Desenvolvedor full-stack",
           date: "Agosto 2022 - Presente",
           description: [
-            "Desenvolvimento, manutenção e deploy de aplicações front-end em React, Typescript, Material-UI e Redux",
-            "Criação de chat-bot para a campanha do Odorico Roman eleição de presidência no Grêmio em 2022",
-            "Manipulação de banco de dados em MySQL",
+            "Responsável por todo o ciclo de vida de desenvolvimento de uma plataforma de gestão de pessoas e atividades, feito com o React, utilizando Material-UI e Redux.",
+            "Responsável pela criação e manutenção de chat-bots para WhatsApp em Node.js, que atendia milhares de usuários todos os dias.",
+            "Familiaridade no uso das tecnologias React, Next, Angular, styled-components, Material-UI, Tailwind-css para front-end; Node, Express, Prisma e Java para back-end; PostgreSQL, MySQL, MongoDB para banco de dados; Jest e Insomnia para realizar testes e React-native para desenvolvimento mobile.",
           ],
         },
         {
@@ -111,9 +111,7 @@ const config = {
           stack: "Desenvolvedor full-stack",
           date: "Janeiro - Julho 2022",
           description: [
-            "Desenvolvimento e manutenção de servidor back-end construído com Node, Express, Prisma e MySQL",
-            "Criação de chat-bots de auto-atendimento no WhatsApp com Node",
-            "Refatoração de aplicação em Next.js",
+            "Desenvolvimento de APIs e chat-bots para WhatsApp em Node.js",
           ],
         },
         {
@@ -121,9 +119,9 @@ const config = {
           stack: "Desenvolvedor front-end",
           date: "Julho 2020 - Dezembro 2021",
           description: [
-            "Desenvolvimento, manutenção e deploy de aplicações em React, Typescript, Next e Styled-components",
-            "Suporte em chamada com cliente final",
-            "Gestão de equipe do front-end",
+            "Desenvolvimento de sistemas de diferentes complexidades e segmentos de negócio, aplicando tecnologias como React, Next.",
+            "Aplicação de metodologia ágil (Scrum).",
+            "Gestão de projetos e de equipe de front-end.",
           ],
         },
       ],
