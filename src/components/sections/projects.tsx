@@ -35,7 +35,7 @@ const Projects = () => {
       <h2>{text("title")}</h2>
 
       <ul className="w-full grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-[15px] relative mt-[50px] 2xl:grid-cols-[repeat(auto-fill,minmax(250px,1fr))]">
-        {myRepos?.map((item, i) => (
+        {myRepos?.slice(0, 6).map((item, i) => (
           <li
             key={i}
             className="relative 
