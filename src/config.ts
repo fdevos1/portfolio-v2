@@ -37,7 +37,49 @@ const config = {
       ],
     },
     {
+      language: "/archive",
+      body: [
+        {
+          name: "Sobre",
+          url: "/#sobre",
+        },
+        {
+          name: "Experiência",
+          url: "/#experiencia",
+        },
+        {
+          name: "Projetos",
+          url: "/#projetos",
+        },
+        {
+          name: "Contato",
+          url: "/#contato",
+        },
+      ],
+    },
+    {
       language: "/en-US",
+      body: [
+        {
+          name: "About",
+          url: "/en-US#sobre",
+        },
+        {
+          name: "Experience",
+          url: "/en-US#experiencia",
+        },
+        {
+          name: "Projects",
+          url: "/en-US#projetos",
+        },
+        {
+          name: "Contact",
+          url: "/en-US#contato",
+        },
+      ],
+    },
+    {
+      language: "/en-US/archive",
       body: [
         {
           name: "About",

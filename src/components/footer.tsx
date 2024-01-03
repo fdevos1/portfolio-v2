@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <footer className="flex flex-col items-center justify-center h-auto min-h-[70px] p-4 text-center">
-      <div className="w-full max-w-[280px] mb-[10px] mx-auto text-slate-200 xl:hidden ">
+      <div className="w-full max-w-[280px] mb-[10px] mx-auto text-slate-200 xl:hidden">
         <ul className="flex justify-between items-center">
           {config.socialMedias &&
             config.socialMedias.map(
