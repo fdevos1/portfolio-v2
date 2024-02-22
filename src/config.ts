@@ -141,7 +141,7 @@ const config = {
         {
           company: "Pandorga",
           stack: "Desenvolvedor full-stack",
-          date: "Agosto 2022 - Presente",
+          date: "Agosto 2022 - Outubro 2023",
           description: [
             "Responsável por todo o ciclo de vida de desenvolvimento de uma plataforma de gestão de pessoas e atividades, feito com o React, utilizando Material-UI e Redux.",
             "Responsável pela criação e manutenção de chat-bots para WhatsApp em Node.js, que atendia milhares de usuários todos os dias.",

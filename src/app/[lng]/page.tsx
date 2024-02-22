@@ -1,5 +1,6 @@
 "use client";
 
+import { RevealList } from "next-reveal";
 import Layout from "../../components/layout";
 import About from "../../components/sections/about";
 import Contact from "../../components/sections/contact";

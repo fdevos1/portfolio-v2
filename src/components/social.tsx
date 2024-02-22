@@ -3,9 +3,9 @@ import Icon from "./icons/icon";
 
 import Side from "./side";
 
-const Social = () => {
+const Social = ({ isHome }: { isHome: Boolean }) => {
   return (
-    <Side orientation="left">
+    <Side orientation="left" isHome={isHome}>
       <ul className="flex flex-col items-center after:content-[''] after:block after:w-[1px] after:h-[90px] after:my-auto after:bg-slate-300">
         {config.socialMedias &&
           config.socialMedias.map(

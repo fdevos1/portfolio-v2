@@ -1,9 +1,9 @@
 import config from "@/config";
 import Side from "./side";
 
-const Email = () => {
+const Email = ({ isHome }: { isHome: Boolean }) => {
   return (
-    <Side orientation="right">
+    <Side orientation="right" isHome={isHome}>
       <div className="flex flex-col items-center after:content-[''] after:block after:w-[1px] after:h-[90px] after:my-auto after:bg-slate-300">
         <a
           href={`mailto:${config.email}`}

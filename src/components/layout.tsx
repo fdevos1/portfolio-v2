@@ -6,6 +6,7 @@ import Header from "./header";
 import Footer from "./footer";
 import Social from "./social";
 import Email from "./email";
+import Loader from "./loader";
 
 import { usePathname } from "next/navigation";
 
@@ -48,16 +49,20 @@ const Layout = ({ children }: { children: JSX.Element }) => {
 
   return (
     <>
-      <div className="flex flex-col min-h-full">
-        <Header />
-        <Social />
-        <Email />
+      {isLoading && isHome ? (
+        <Loader finishLoading={() => setIsLoading(false)} />
+      ) : (
+        <div className="flex flex-col min-h-full">
+          <Header isHome={isHome} />
+          <Social isHome={isHome} />
+          <Email isHome={isHome} />
 
-        <div id="content">
-          {children}
-          <Footer />
+          <div id="content">
+            {children}
+            <Footer />
+          </div>
         </div>
-      </div>
+      )}
     </>
   );
 };
