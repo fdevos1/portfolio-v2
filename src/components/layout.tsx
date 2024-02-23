@@ -49,20 +49,20 @@ const Layout = ({ children }: { children: JSX.Element }) => {
 
   return (
     <>
-      {isLoading && isHome ? (
+      {/* {isLoading && isHome ? (
         <Loader finishLoading={() => setIsLoading(false)} />
-      ) : (
-        <div className="flex flex-col min-h-full">
-          <Header isHome={isHome} />
-          <Social isHome={isHome} />
-          <Email isHome={isHome} />
+      ) : ( */}
+      <div className="flex flex-col min-h-full">
+        <Header isHome={isHome} />
+        <Social isHome={isHome} />
+        <Email isHome={isHome} />
 
-          <div id="content">
-            {children}
-            <Footer />
-          </div>
+        <div id="content">
+          {children}
+          <Footer />
         </div>
-      )}
+      </div>
+      {/* )} */}
     </>
   );
 };

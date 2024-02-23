@@ -29,7 +29,7 @@ const Loader = ({ finishLoading }: { finishLoading: () => void }) => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center fixed top-0 bottom-0 left-0 right-0 w-full h-full bg-neutral-900 z-50">
+    <div className="flex justify-center items-center fixed top-0 bottom-0 left-0 right-0 w-full h-full bg-neutral-900 z-[99]">
       <Helmet bodyAttributes={{ class: `hidden` }} />
     </div>
   );

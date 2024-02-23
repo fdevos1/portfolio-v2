@@ -39,7 +39,7 @@ const Side = ({
         {isMounted && (
           <CSSTransition
             classNames={isHome ? "fade" : ""}
-            timeout={isHome ? 2500 : 0}
+            timeout={isHome ? 1500 : 0}
           >
             {children}
           </CSSTransition>
