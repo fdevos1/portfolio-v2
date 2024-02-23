@@ -14,18 +14,13 @@ const Loader = ({ finishLoading }: { finishLoading: () => void }) => {
     });
 
     loader
-      .add({
-        targets: "#logo path",
-        delay: 300,
-        duration: 1500,
-        easing: "easeInOutQuart",
-        strokeDashoffset: [anime.setDashoffset, 0],
-      })
+
       .add({
         targets: "#logo #B",
-        duration: 700,
+        duration: 1000,
         easing: "easeInOutQuart",
         opacity: 1,
+        scale: 1,
       })
       .add({
         targets: "#logo",

@@ -54,7 +54,7 @@ const Header = ({ isHome }: { isHome: Boolean }) => {
       <nav className="flex justify-between items-center relative w-full font-mono z-[12] ">
         <TransitionGroup component={null}>
           {isMounted && (
-            <CSSTransition classNames={fadeClass} timeout={2000}>
+            <CSSTransition classNames={fadeClass} timeout={isHome ? 1500 : 0}>
               <>
                 <Icon name="Logo" />
               </>
@@ -65,37 +65,40 @@ const Header = ({ isHome }: { isHome: Boolean }) => {
         <div className="flex items-center lg:hidden">
           <ol className="flex justify-between items-center p-0 m-0 list-none">
             <TransitionGroup component={null}>
-              {config.navLinks.map(({ language, body }) => {
-                if (language === pathname) {
-                  return body.map(({ url, name }, i: number) => (
-                    <CSSTransition
-                      key={i}
-                      classNames={fadeDownClass}
-                      timeout={3000}
-                    >
-                      <li
+              {isMounted &&
+                config.navLinks.map(({ language, body }) => {
+                  if (language === pathname) {
+                    return body.map(({ url, name }, i: number) => (
+                      <CSSTransition
                         key={i}
-                        className={`my-1 relative ${
-                          isHome ? "delay-150" : "delay-0"
-                        }`}
+                        classNames={fadeDownClass}
+                        timeout={isHome ? 1500 : 0}
                       >
-                        <a
-                          href={url}
-                          className="p-2 before:mr-1 text-xs before:text-[10px] before:text-right before:text-cyan-500"
+                        <li
+                          className={`my-1 relative ${
+                            isHome ? "delay-150" : "delay-0"
+                          }`}
                         >
-                          {name}
-                        </a>
-                      </li>
-                    </CSSTransition>
-                  ));
-                }
-              })}
+                          <a
+                            href={url}
+                            className="p-2 before:mr-1 text-xs before:text-[10px] before:text-right before:text-cyan-500"
+                          >
+                            {name}
+                          </a>
+                        </li>
+                      </CSSTransition>
+                    ));
+                  }
+                })}
             </TransitionGroup>
           </ol>
 
           <TransitionGroup component={null}>
             {isMounted && (
-              <CSSTransition classNames={fadeDownClass} timeout={3000}>
+              <CSSTransition
+                classNames={fadeDownClass}
+                timeout={isHome ? 1500 : 0}
+              >
                 <div
                   style={{
                     transitionDelay: `${
