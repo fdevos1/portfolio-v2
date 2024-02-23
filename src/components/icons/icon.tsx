@@ -6,6 +6,7 @@ import IconInstagram from "./instagram";
 import IconLinkedin from "./linkedin";
 import IconLogo from "./logo";
 import IconLink from "./link";
+import IconLoader from "./loader";
 
 export type IconProps = ComponentProps<"svg"> & {
   name: string;
@@ -25,6 +26,8 @@ const Icon = ({ name }: IconProps) => {
       return <IconFolder />;
     case "Link":
       return <IconLink />;
+    case "Loader":
+      return <IconLoader />;
   }
 };
 

@@ -8,9 +8,10 @@ const Hero = () => {
 
   return (
     <RevealWrapper
+      className="invisible"
       origin="bottom"
       distance="20px"
-      duration={1000}
+      duration={2000}
       rotate={{ x: 0, y: 0, z: 0 }}
       opacity={0}
       scale={1}

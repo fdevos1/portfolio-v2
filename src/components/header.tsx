@@ -73,7 +73,12 @@ const Header = ({ isHome }: { isHome: Boolean }) => {
                       classNames={fadeDownClass}
                       timeout={3000}
                     >
-                      <li key={i} className="my-1 relative">
+                      <li
+                        key={i}
+                        className={`my-1 relative ${
+                          isHome ? "delay-150" : "delay-0"
+                        }`}
+                      >
                         <a
                           href={url}
                           className="p-2 before:mr-1 text-xs before:text-[10px] before:text-right before:text-cyan-500"

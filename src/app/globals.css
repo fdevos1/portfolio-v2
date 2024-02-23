@@ -30,7 +30,7 @@ body {
   overflow-x: hidden;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  background-color: #121212;
+  background-color: rgb(23, 23, 23);
   color: rgb(226 232 240);
   font-size: 20px;
   line-height: 1.3;
